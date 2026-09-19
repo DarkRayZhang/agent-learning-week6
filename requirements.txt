@@ -1,0 +1,4 @@
+# Week 6 卫星项目「基础 RAG Agent」依赖
+chromadb          # 向量库（复用 W5）
+openai            # embedding + chat
+python-dotenv     # 读 .env

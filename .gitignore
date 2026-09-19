@@ -1,0 +1,11 @@
+# 环境变量（含 Key，绝不进库）
+.env
+
+# Python 虚拟环境
+.venv/
+venv/
+
+# 缓存
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
