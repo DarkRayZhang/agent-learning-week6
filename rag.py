@@ -96,7 +96,7 @@ def rag(query: str, top_k: int = 3):
     
     try:
         data = json.loads(raw)
-        if not "found" in data or not "answer" in data:
+        if not "found" in data or not "answer" in data:  #如有字段但是内容为空应该如何处理
            print("契约字段缺失, 大模型返回为:", raw, file=sys.stderr)
            return REFUSE_TEXT, []
         answer = str(data.get("answer") or "").strip()
